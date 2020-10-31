@@ -1,0 +1,22 @@
+.site-logo {
+  margin-right: 93px;
+  color: $accent-color;
+  font-family: $secondary-font;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+
+  .navigation & {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
+.logo-half {
+  color: $logo-color;
+}
+
+.logo-var {
+  color: $light-color;
+}

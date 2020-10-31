@@ -1,0 +1,13 @@
+.header {
+  border-bottom: 1px solid $line-color;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.header .address {
+  margin-left: auto;
+}

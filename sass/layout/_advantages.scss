@@ -1,0 +1,55 @@
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+
+  &-item {
+    width: 270px;
+    height: 251px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.advantages-list-title {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $team-color;
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+    .attention & {
+      background-image: url(../images/svg/antenna.svg);
+    }
+    .punctuality & {
+      background-image: url(../images/svg/clock.svg);
+    }
+    .planning & {
+      background-image: url(../images/svg/diagram.svg);
+    }
+    .technologies & {
+      background-image: url(../images/svg/astronaut.svg);
+    }
+  }
+}
+
+.advantages-list-item {
+  height: 75px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}

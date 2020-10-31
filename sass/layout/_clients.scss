@@ -1,0 +1,108 @@
+.clients-section-title {
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid $social-networks-color;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    transition: border $duration $timing-function;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $accent-color;
+    }
+  }
+
+  &-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &-svg {
+    fill: $social-networks-color;
+
+    transition: fill $duration $timing-function;
+
+    .clients-list-link:hover &,
+    .clients-list-link:focus & {
+      fill: $accent-color;
+    }
+  }
+}
+
+/*.clients-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid $social-networks-color;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition: border $duration $timing-function;
+}
+
+.clients-list-link:hover,
+.clients-list-link:focus {
+  border: 1px solid $accent-color;
+}
+.clients-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-list-svg {
+  fill: $social-networks-color;
+
+  transition: fill $duration $timing-function;
+}
+.clients-list-link:hover .clients-list-svg,
+.clients-list-link:focus .clients-list-svg {
+  fill: $accent-color;
+}*/
+
+.ya-co {
+  width: 44.27px;
+  height: 49.23px;
+}
+
+.tagline-here {
+  width: 40px;
+  height: 52px;
+}
+
+.company {
+  width: 41px;
+  height: 42.6px;
+}
+
+.foster-peters {
+  width: 79.66px;
+  height: 42.22px;
+}
+
+.brand {
+  width: 59px;
+  height: 47px;
+}
+
+.tag-line {
+  width: 88.48px;
+  height: 45.44px;
+}
