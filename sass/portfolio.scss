@@ -1,5 +1,6 @@
 //utils
 @import "./utils/variables";
+@import "./utils/visually-hidden";
 
 //base
 @import "./base/common";
@@ -9,6 +10,7 @@
 @import "./components/logo";
 @import "./components/navigation";
 @import "./components/contacts";
+@import "./components/menu";
 @import "./components/social-networks";
 @import "./components/subscribe";
 
