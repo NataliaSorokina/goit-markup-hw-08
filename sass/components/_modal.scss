@@ -17,31 +17,38 @@
   opacity: 0;
   pointer-events: none;
 }
-/* 
+
 .wrapper-modal {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100%;
   padding: 15px;
-}*/
+}
 
-/* .modal-window {
+.modal-window {
   position: relative;
   display: block;
   /*top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);*/
-/* width: 528px;
-  /*height: 581px;*/
-/* padding: 40px;
+  transform: translate(-50%, -50%);
+  height: 581px;*/
+  padding: 40px;
   background: $light-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-} */
 
-/* .close-btn {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
+}
+
+.close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -151,8 +158,8 @@
     }
 
     &::placeholder {
-      font-size: 12px;
-      line-height: 1.17;
+      font-size: 14px;
+      line-height: 1.143;
       letter-spacing: 0.01em;
       color: rgba(117, 117, 117, 0.5);
     }
@@ -160,8 +167,8 @@
 }
 
 .modal-policy-label {
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 1.171;
   letter-spacing: 0.03em;
 
   &::before {
@@ -186,9 +193,10 @@
 }
 
 .modal-btn {
-  margin: 30px 124px 0;
+  margin-top: 30px;
   width: 200px;
   height: 50px;
+  align-self: center;
   font-weight: bold;
   font-size: 16px;
   line-height: 1, 875;
@@ -200,4 +208,3 @@
   border: none;
   cursor: pointer;
 }
- */
