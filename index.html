@@ -20,50 +20,46 @@
     <header class="header">
       <div class="container">
         <nav class="navigation">
-          <a
-            href="./index.html"
-            class="site-logo link"
-            aria-label="логотип веб-студии"
-            lang="en"
-          >
+          <a href="./index.html" class="site-logo link" aria-label="логотип веб-студии" lang="en">
             Web<span class="logo-half">Studio</span>
           </a>
-          <ul class="site-nav list">
-            <li class="site-nav-item">
-              <a class="site-nav-link link current" href="./index.html"
-                >Студия</a
-              >
-            </li>
-            <li class="site-nav-item">
-              <a class="site-nav-link link" href="./portfolio.html"
-                >Портфолио</a
-              >
-            </li>
-            <li class="site-nav-item">
-              <a class="site-nav-link link" href="">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <address class="address">
-          <ul class="contacts-list list">
-            <li class="contacts-list-item">
-              <a
-                class="contacts-list-link link"
-                href="mailto:info@devstudio.com"
-                ><svg class="contacts-list-icon envelope">
-                  <use href="./images/svg/sprite.svg#envelope"></use></svg
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="contacts-list-item">
-              <a class="contacts-list-link link" href="tel:+380991111111"
-                ><svg class="contacts-list-icon smartphone">
-                  <use href="./images/svg/sprite.svg#smartphone"></use></svg
-                >+38 099 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+          <button class="menu-btn" type="button" aria-expanded="true" aria-controls="menu-container" data-menu-button>
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="menu-btn-close" href="./images/svg/sprite.svg#menu-close"></use>
+              <use class="menu-btn-open" href="./images/svg/sprite.svg#menu-open"></use>
+            </svg>
+          </button>
+          
+          <div class="menu-container" id="menu-container" data-menu>
+            <div class="site-nav-section">
+              <ul class="site-nav list">
+                <li class="site-nav-item">
+                  <a class="site-nav-link link current" href="./index.html">Студия</a>
+                </li>
+                <li class="site-nav-item">
+                  <a class="site-nav-link link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="site-nav-item">
+                  <a class="site-nav-link link" href="">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <address class="address">
+              <ul class="contacts-list list">
+                <li class="contacts-list-item">
+                  <a class="contacts-list-link link" href="mailto:info@devstudio.com"><svg class="contacts-list-icon envelope">
+                      <use href="./images/svg/sprite.svg#envelope"></use>
+                    </svg>info@devstudio.com</a>
+                </li>
+                <li class="contacts-list-item">
+                  <a class="contacts-list-link link" href="tel:+380991111111"><svg class="contacts-list-icon smartphone">
+                      <use href="./images/svg/sprite.svg#smartphone"></use>
+                    </svg>+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+        </nav>              
       </div>
     </header>
     <main>
@@ -121,30 +117,32 @@
           <h2 class="works-section-title title">Чем мы занимаемся</h2>
           <ul class="works list">
             <li class="works-item">
-              <img
-                src="./images/main_section_3/PC.jpg"
-                alt="человек работает за компьютером"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source srcset="./images/main_section_3/PC-desktop.webp 1x, ./images/main_section_3/PC-desktop@2x.webp 2x"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./images/main_section_3/PC-desktop.jpg 1x, ./images/main_section_3/PC-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                <img src="./images/main_section_3/PC.jpg" alt="человек работает за компьютером" />
+              </picture>              
               <p class="works-item-desc">Десктопные приложения</p>
             </li>
             <li class="works-item">
-              <img
-                src="./images/main_section_3/mobile.jpg"
-                alt="человек держит мобильный телефон"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source srcset="./images/main_section_3/mobile-desktop.webp 1x, ./images/main_section_3/mobile-desktop@2x.webp 2x"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./images/main_section_3/mobile-desktop.jpg 1x, ./images/main_section_3/mobile-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                <img src="./images/main_section_3/mobile.jpg" alt="человек держит мобильный телефон" />
+              </picture>              
               <p class="works-item-desc">Мобильные приложения</p>
             </li>
             <li class="works-item">
-              <img
-                src="./images/main_section_3/color-palette.jpg"
-                alt="палитра цветов на экране планшета"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source srcset="./images/main_section_3/color-palette-desktop.webp 1x, ./images/main_section_3/color-palette-desktop@2x.webp 2x"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./images/main_section_3/color-palette-desktop.jpg 1x, ./images/main_section_3/color-palette-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                <img src="./images/main_section_3/color-palette.jpg" alt="палитра цветов на экране планшета" />
+              </picture>              
               <p class="works-item-desc">Дизайнерские решения</p>
             </li>
           </ul>
@@ -156,12 +154,24 @@
           <h2 class="team-section-title title">Наша команда</h2>
           <ul class="team list">
             <li class="team-list-item">
-              <img
-                src="./images/main_section_4/igor.jpg"
-                alt="дизайнер игорь демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/main_section_4/igor-desktop.webp 1x, ./images/main_section_4/igor-desktop@2x.webp 2x"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source
+                  srcset="./images/main_section_4/igor-desktop.jpg 1x, ./images/main_section_4/igor-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                <source srcset="./images/main_section_4/igor-tablet.webp 1x, ./images/main_section_4/igor-tablet@2x.webp 2x"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="./images/main_section_4/igor-tablet.jpg 1x, ./images/main_section_4/igor-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                <source srcset="./images/main_section_4/igor-mobile.webp 1x, ./images/main_section_4/igor-mobile@2x.webp 2x"
+                  media="(min-width: 320px)" type="image/webp">
+                <source srcset="./images/main_section_4/igor-mobile.jpg 1x, ./images/main_section_4/igor-mobile@2x.jpg 2x"
+                  media="(min-width: 320px)">
+                <img src="./images/main_section_4/igor.jpg" alt="дизайнер игорь демьяненко" />                
+              </picture>
+              
               <h3 class="team-list-title title">Игорь Демьяненко</h3>
               <p class="team-list-job" lang="en">Product Designer</p>
               <ul class="social-networks list">
@@ -196,12 +206,21 @@
               </ul>
             </li>
             <li class="team-list-item">
-              <img
-                src="./images/main_section_4/olga.jpg"
-                alt="разработчик ольга репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/main_section_4/olga-desktop.webp 1x, ./images/main_section_4/olga-desktop@2x.webp 2x"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./images/main_section_4/olga-desktop.jpg 1x, ./images/main_section_4/olga-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                <source srcset="./images/main_section_4/olga-tablet.webp 1x, ./images/main_section_4/olga-tablet@2x.webp 2x"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="./images/main_section_4/olga-tablet.jpg 1x, ./images/main_section_4/olga-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                <source srcset="./images/main_section_4/olga-mobile.webp 1x, ./images/main_section_4/olga-mobile@2x.webp 2x"
+                  media="(min-width: 320px)" type="image/webp">
+                <source srcset="./images/main_section_4/olga-mobile.jpg 1x, ./images/main_section_4/olga-mobile@2x.jpg 2x"
+                  media="(min-width: 320px)">
+                <img src="./images/main_section_4/olga.jpg" alt="разработчик ольга репина" />
+              </picture>              
               <h3 class="team-list-title title">Ольга Репина</h3>
               <p class="team-list-job" lang="en">Frontend Developer</p>
               <ul class="social-networks list">
@@ -236,12 +255,21 @@
               </ul>
             </li>
             <li class="team-list-item">
-              <img
-                src="./images/main_section_4/nikolai.jpg"
-                alt="маркетинг николай тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/main_section_4/nikolai-desktop.webp 1x, ./images/main_section_4/nikolai-desktop@2x.webp 2x"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./images/main_section_4/nikolai-desktop.jpg 1x, ./images/main_section_4/nikolai-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                <source srcset="./images/main_section_4/nikolai-tablet.webp 1x, ./images/main_section_4/nikolai-tablet@2x.webp 2x"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="./images/main_section_4/nikolai-tablet.jpg 1x, ./images/main_section_4/nikolai-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                <source srcset="./images/main_section_4/nikolai-mobile.webp 1x, ./images/main_section_4/nikolai-mobile@2x.webp 2x"
+                  media="(min-width: 320px)" type="image/webp">
+                <source srcset="./images/main_section_4/nikolai-mobile.jpg 1x, ./images/main_section_4/nikolai-mobile@2x.jpg 2x"
+                  media="(min-width: 320px)">
+                <img src="./images/main_section_4/nikolai.jpg" alt="маркетинг николай тарасов" />
+              </picture>              
               <h3 class="team-list-title title">Николай Тарасов</h3>
               <p class="team-list-job" lang="en">Marketing</p>
               <ul class="social-networks list">
@@ -276,12 +304,21 @@
               </ul>
             </li>
             <li class="team-list-item">
-              <img
-                src="./images/main_section_4/mikhail.jpg"
-                alt="дизайнер михаил ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/main_section_4/mikhail-desktop.webp 1x, ./images/main_section_4/mikhail-desktop@2x.webp 2x"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./images/main_section_4/mikhail-desktop.jpg 1x, ./images/main_section_4/mikhail-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                <source srcset="./images/main_section_4/mikhail-tablet.webp 1x, ./images/main_section_4/mikhail-tablet@2x.webp 2x"
+                  media="(min-width: 768px)" type="image/webp">mikhail
+                <source srcset="./images/main_section_4/mikhail-tablet.jpg 1x, ./images/main_section_4/mikhail-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                <source srcset="./images/main_section_4/mikhail-mobile.webp 1x, ./images/main_section_4/mikhail-mobile@2x.webp 2x"
+                  media="(min-width: 320px)" type="image/webp">
+                <source srcset="./images/main_section_4/mikhail-mobile.jpg 1x, ./images/main_section_4/mikhail-mobile@2x.jpg 2x"
+                  media="(min-width: 320px)">
+                <img src="./images/main_section_4/mikhail.jpg" alt="дизайнер михаил ермаков" />
+              </picture>              
               <h3 class="team-list-title title">Михаил Ермаков</h3>
               <p class="team-list-job" lang="en">UI Designer</p>
               <ul class="social-networks list">
@@ -507,5 +544,6 @@
 
     
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

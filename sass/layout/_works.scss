@@ -1,4 +1,9 @@
-.works {
+.works-section {
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    display: none;
+  }
+}
+/* .works {
   display: flex;
   flex-wrap: wrap;
 
@@ -43,3 +48,4 @@
     }
   }
 }
+ */

@@ -1,16 +1,34 @@
 .contacts-list {
   display: flex;
 
+  @media screen and (max-width: 767px) {
+    align-items: center;
+  }
+
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+  }
+
   &-link {
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: $primary-text-color;
+    /* justify-content: center; */
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.143;
+    font-size: 18px;
+    line-height: 1.667;
     letter-spacing: 0.02em;
+    color: $primary-text-color;
     transition: color $duration $timing-function;
+
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      justify-content: center;
+      font-size: 14px;
+      line-height: 1.143;
+    }
 
     &:hover,
     &:focus {
@@ -31,20 +49,39 @@
 
   &-item {
     &:first-child {
-      margin-right: 50px;
-    }
-    & .link {
-      padding: 32px 0px;
+      margin-right: 0px;
+
+      @media screen and (min-width: 1200px) {
+        margin-right: 50px;
+      }
     }
   }
 }
 
 .envelope {
   width: 16px;
-  height: 12px;
+  height: 11px;
+
+  @media screen and (min-width: 768px) {
+    width: 14px;
+    height: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
 }
 
 .smartphone {
   width: 10px;
   height: 16px;
+
+  @media screen and (min-width: 768px) {
+    height: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 15px;
+  }
 }

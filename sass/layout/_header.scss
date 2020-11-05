@@ -1,11 +1,12 @@
 .header {
+  position: relative;
   border-bottom: 1px solid $line-color;
 }
 
 .header .container {
   display: flex;
   align-items: center;
-  height: 80px;
+  /* height: 80px; */
 }
 
 .header .address {
