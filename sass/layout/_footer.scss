@@ -1,45 +1,57 @@
-/* .footer {
-  display: flex;
-  height: 252px;
+.footer {
   background-color: $background-color;
 
   & .container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
   }
 
   & .address {
-    width: 231px;
     margin-top: 20px;
+
+    @media screen and (min-width: 1200px) {
+      width: 231px;
+    }
   }
 
   &-contacts-list {
-    padding: 60px 0px;
-    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
+      text-align: center;
+      padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-right: 165px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+    }
   }
 
   &-list-item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
-} */
-/*.footer .container {
-  display: flex;
-}*/
+}
 
-/*.footer-contacts-list {
-  padding: 60px 0px;
-  margin-right: 70px;
-}*/
-
-/*.footer .address {
-  width: 231px;
-  margin-top: 20px;
-}*/
-
-/*.footer-list-item:not(:last-child) {
-  margin-bottom: 9px;
-}*/
-
-/* .footer-list-link {
+.footer-list-link {
   color: $light-color;
   font-weight: normal;
   font-size: 14px;
@@ -67,29 +79,17 @@
       color: $accent-color;
     }
   }
-} */
-
-/*.footer-list-link-contact {
-  color: $contacts-color;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-
-  transition: color $duration $timing-function;
-}*/
-
-/*.footer-list-link:hover,
-.footer-list-link:focus,
-.footer-list-link-contact:hover,
-.footer-list-link-contact:focus {
-  color: $accent-color;
-}*/
+}
 
 /*====social-networks====*/
-/* .footer-social-networks {
-  padding-top: 72px;
-  padding-bottom: 100px;
+.footer-social-networks {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 5px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 12px;
+  }
 }
 
 .social-networks-title {
@@ -99,10 +99,11 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: $light-color;
 }
 
 .social-networks-link:hover,
 .social-networks-link:focus {
   background-color: $accent-color;
-} */
+}
