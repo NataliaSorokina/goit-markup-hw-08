@@ -393,7 +393,12 @@ img {
   display: flex;
   background-color: #ffffff;
   text-align: center;
-  z-index: 2;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    z-index: 2;
+  }
 }
 
 .menu-container.is-open {
@@ -803,30 +808,6 @@ img {
   outline: none;
 }
 
-/*.subscribe-form-input {
-  width: 358px;
-  height: 50px;
-  padding-left: 15px;
-
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: transparent;
-
-  font-size: 16px;
-  line-height: 1.25;
-  align-items: center;
-  letter-spacing: 0.03em;
-
-  color: rgba(255, 255, 255, 0.6);
-
- 
-}
-
-.subscribe-form-input:focus {
-  outline: none;
-}*/
 .header {
   position: relative;
   border-bottom: 1px solid #ececec;
@@ -868,24 +849,6 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 118px 0;
-  /* height: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/main_section_1/hero-bg-img.jpg);
-  background-color: $background-color; */
-  /*  & .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 600px;
-  } */
 }
 
 @media screen and (min-width: 1200px) {
@@ -1035,17 +998,6 @@ img {
   background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
-  /* @media screen and (max-width: 767px) {
-      width: 450px;
-    }
-
-    @media screen and (min-width: 768px) {
-      width: 354px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      width: 270px;
-    } */
 }
 
 .attention .advantages-list-title::before {
@@ -1339,104 +1291,6 @@ img {
   height: 45.44px;
 }
 
-/*.clients-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  &-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 210/226/170px;
-    height: 90px;
-    border: 1px solid $social-networks-color;
-    box-sizing: border-box;
-    border-radius: 4px;
-
-    transition: border $duration $timing-function;
-
-    &:hover,
-    &:focus {
-      border: 1px solid $accent-color;
-    }
-  }
-
-  &-item:not(:last-child) {
-    margin-right: 30px;
-  }
-
-  &-svg {
-    fill: $social-networks-color;
-
-    transition: fill $duration $timing-function;
-
-    .clients-list-link:hover &,
-    .clients-list-link:focus & {
-      fill: $accent-color;
-    }
-  }
-} */
-/*.clients-list-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 170px;
-  height: 90px;
-  border: 1px solid $social-networks-color;
-  box-sizing: border-box;
-  border-radius: 4px;
-
-  transition: border $duration $timing-function;
-}
-
-.clients-list-link:hover,
-.clients-list-link:focus {
-  border: 1px solid $accent-color;
-}
-.clients-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.clients-list-svg {
-  fill: $social-networks-color;
-
-  transition: fill $duration $timing-function;
-}
-.clients-list-link:hover .clients-list-svg,
-.clients-list-link:focus .clients-list-svg {
-  fill: $accent-color;
-}*/
-/* .ya-co {
-  width: 44.27px;
-  height: 49.23px;
-}
-
-.tagline-here {
-  width: 40px;
-  height: 52px;
-}
-
-.company {
-  width: 41px;
-  height: 42.6px;
-}
-
-.foster-peters {
-  width: 79.66px;
-  height: 42.22px;
-}
-
-.brand {
-  width: 59px;
-  height: 47px;
-}
-
-.tag-line {
-  width: 88.48px;
-  height: 45.44px;
-}
- */
 .footer {
   background-color: #2f303a;
 }
