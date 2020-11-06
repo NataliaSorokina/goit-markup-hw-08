@@ -7,22 +7,16 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 
   @media screen and (min-width: 768px) {
     display: none;
   }
 
-  /*align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  background: $light-color;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;*/
-  cursor: pointer;
-
-  &-svg:hover,
-  &-svg:focus {
+  &-close:hover,
+  &-open:hover,
+  &-close:focus,
+  &-open:focus {
     fill: $accent-color;
   }
 }
