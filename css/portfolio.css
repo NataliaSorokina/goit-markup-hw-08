@@ -241,9 +241,15 @@ img {
   background-color: #2196f3;
 }
 
+@media screen and (max-width: 767px) {
+  .current::after {
+    bottom: -10px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .current::after {
-    bottom: 0;
+    bottom: -2px;
   }
 }
 
@@ -388,6 +394,7 @@ img {
   display: flex;
   background-color: #ffffff;
   text-align: center;
+  z-index: 2;
 }
 
 .menu-container.is-open {
