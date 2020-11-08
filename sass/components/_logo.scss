@@ -19,16 +19,19 @@
   }
 
   & .footer {
-    @media screen and (max-width: 1199px) {
-      margin-right: 0;
-      text-align: center;
+    margin-right: 0;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      /* margin-right: 0; */
+      text-align: left;
     }
   }
 
   .navigation & {
     padding: 16px 0;
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
       padding: 26px 0;
     }
 

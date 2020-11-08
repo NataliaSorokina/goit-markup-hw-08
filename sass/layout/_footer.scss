@@ -12,8 +12,12 @@
     padding-left: 15px;
     padding-right: 15px;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 320px) {
       flex-direction: column;
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
     }
   }
 
@@ -29,7 +33,7 @@
     display: flex;
     flex-direction: column;
 
-    @media screen and (min-width: 320px) and (max-width: 1199px) {
+    @media screen and (min-width: 320px) {
       text-align: center;
       padding-bottom: 60px;
     }
@@ -40,6 +44,8 @@
 
     @media screen and (min-width: 1200px) {
       margin-right: 70px;
+      text-align: left;
+      padding-bottom: 0px;
     }
   }
 
@@ -83,11 +89,12 @@
 
 /*====social-networks====*/
 .footer-social-networks {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     margin-top: 5px;
   }
 
   @media screen and (min-width: 1200px) {
+    margin-top: 0px;
     padding-top: 12px;
   }
 }
@@ -101,6 +108,10 @@
   text-transform: uppercase;
   text-align: center;
   color: $light-color;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .social-networks-link:hover,

@@ -2,12 +2,10 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  @media screen and (max-width: 767px) {
-    margin-bottom: 40px;
-  }
+  margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     justify-content: center;
   }
 
@@ -15,14 +13,17 @@
     margin-bottom: 50px;
   }
 }
+.portfolio-btn {
+  margin-bottom: 15px;
 
-.portfolio-btn:not(:last-child) {
-  margin-right: 8px;
-}
+  &:not(:nth-last-child(-n + 2)) {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0px;
+    }
+  }
 
-.portfolio-btn:not(:nth-last-child(-n + 2)) {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 15px;
+  &:not(:last-child) {
+    margin-right: 8px;
   }
 }
 
@@ -59,20 +60,20 @@
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-
-  @media screen and (max-width: 767px) {
-    justify-content: center;
-  }
+  /*  justify-content: center; */
 }
 
 .portfolio-item {
   display: flex;
   box-sizing: border-box;
-  height: 404px;
   margin-bottom: 30px;
   background: $light-color;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 480px) {
+    height: 404px;
+  }
+
+  @media screen and (min-width: 768px) {
     width: 354px;
     &:nth-child(odd) {
       margin-right: 30px;
@@ -81,6 +82,10 @@
 
   @media screen and (min-width: 1200px) {
     width: 370px;
+
+    &:nth-child(odd) {
+      margin-right: 0px;
+    }
 
     &:not(:nth-child(3n)) {
       margin-right: 30px;
@@ -104,7 +109,10 @@
   }
 
   &-box {
-    padding: 20px 24px;
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    padding-right: 12px;
     border: 1px solid #eeeeee;
     border-top: none;
   }
